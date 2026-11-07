@@ -75,9 +75,10 @@ the short list below of things that are open without being a phase.
   production job with `dry_run: true, update_listing: true` as its first real exercise, before a real
   one — and nine locales is nine uploads, not one.
 - **Play's per-app contact email still names the Gmail inbox.** Change it in *Store settings* to
-  `binky.support@maksforge.com` the day the address change merges, not at the upload: Pages republishes
-  `privacy-policy.md` and `index.md` from `main` on merge, and the policy's *Contact* section defers to
-  the listing, so the two disagree from that moment (see [`store-listing.md`](store-listing.md)).
+  `binky.support@maksforge.com` the day the address change merges, not at the upload: maksforge.com
+  republishes `privacy-policy.md` and `index.md` within about 15 minutes of a merge to `main`, and the
+  policy's *Contact* section defers to the listing, so the two disagree from that moment (see
+  [`store-listing.md`](store-listing.md)).
 - **The maksforge route has not carried a real report yet.** Only Gmail's send-as confirmations have
   come through Cloudflare. Send *Report a bug* from the app off a non-Gmail account and confirm it lands
   in the inbox, not Spam, with the `subject:bug` filter applying on the account it now reaches — Phase

@@ -54,13 +54,13 @@ for consistency rather than because those languages need it.
 
 | Field | Value |
 | --- | --- |
-| Privacy policy URL | `https://maksforge.com/binky-app/privacy-policy.html` — switched in the Console on 2026-10-25; before that it was `https://maksforge.github.io/binky-app/privacy-policy.html`, which still redirects here |
+| Privacy policy URL | `https://maksforge.com/binky-app/privacy-policy.html` — switched in the Console on 2026-10-25; before that it was `https://maksforge.github.io/binky-app/privacy-policy.html`, which was retired on 2026-11-07 and now returns 404. maksforge.com answers the `.html` form with a redirect to `https://maksforge.com/binky-app/privacy-policy` |
 | App icon (512²) | [`art/play-icon-512.png`](../art/play-icon-512.png) |
 | Feature graphic (1024×500) | [`art/play-feature-graphic.png`](../art/play-feature-graphic.png) — **Play crops it to 16:9**, `object-fit: cover` on the search results card, so 68px of each side never shows. `make-feature-graphic.py` derives the layout from that and prints the measured margins; re-upload after any change to it |
 | Phone screenshots (1452×2582) | [`art/play-screenshots/`](../art/play-screenshots/) — **eight scenes × nine locales, light**, re-shot 2026-08-26. Upload in filename order: `1_home`, `2_weight`, `3_observations`, `4_timeline`, `5_care`, `6_medication-course`, `7_documents`, `8_backup`, each suffixed with its locale tag (`-en`, `-cs`, `-de`, `-es`, `-fr`, `-it`, `-pl`, `-pt-BR`, `-uk`) |
 | App category | Lifestyle |
 | Contact email | `binky.support@maksforge.com` — the per-app support address, set in Store settings, not the account-level developer email |
-| Website | `https://maksforge.com/binky-app/` — the Pages root 9e created, also in Store settings. The privacy-policy URL above is a page *under* it. Switched in the Console on 2026-10-25; before that it was `https://srednimax.github.io/binky-app/`, which still forwards here. The `https://maksforge.github.io/binky-app/` this file gave before never reached the Console |
+| Website | `https://maksforge.com/binky-app/` — the site root 9e created, also in Store settings. The privacy-policy URL above is a page *under* it. Switched in the Console on 2026-10-25; before that it was `https://srednimax.github.io/binky-app/`, which was retired on 2026-11-07 and now returns 404. The `https://maksforge.github.io/binky-app/` this file gave before never reached the Console |
 
 ✅ **The screenshots were re-shot on 2026-08-26** and photograph the app as 1.9.0 builds it — 9f's
 Home header, 10e's timeline and the Phase 7 light scheme included. **Eight per locale, not four**,
@@ -86,12 +86,12 @@ the account, and **sign in to it at least once every two years**: Google deletes
 inactive that long. It is **not forwarded**; check its inbox by hand now and then for mail from those
 builds.
 
-The privacy policy is served by GitHub Pages from `main` / `docs`, which is why `docs/_config.yml`
-exists at all: Play requires a *hosted* URL and the app has no server by design. It rebuilds on every
-push to `main`, so the policy can never drift from the repo. ⚠️ **The site root is no longer a 404.**
-This paragraph said it returned one "on purpose" until 2026-08-21, which was true when the site served
-exactly one page; **9e added `docs/index.md`**, so the root now answers 200 and is what the Website
-field above points at.
+The privacy policy is served by maksforge.com from `main` / `docs`, which is why `docs/_config.yml`
+exists at all: Play requires a *hosted* URL and the app has no server by design. It is republished
+within about 15 minutes of every push to `main`, so the policy can never drift from the repo.
+⚠️ **The site root is no longer a 404.** This paragraph said it returned one "on purpose" until
+2026-08-21, which was true when the site served exactly one page; **9e added `docs/index.md`**, so the
+root now answers 200 and is what the Website field above points at.
 
 ---
 
