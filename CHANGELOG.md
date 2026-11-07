@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.2](https://github.com/maks-sredniawa/binky-app/compare/v1.10.1...v1.10.2) (2026-11-07)
+
+
+### Bug Fixes
+
+* open the privacy policy at maksforge.com, since the old srednimax.github.io link is gone ([698874a](https://github.com/maks-sredniawa/binky-app/commit/698874a0b3bae3cd3d969270770358952fe77c1e))
+
 ## [1.10.1](https://github.com/srednimax/binky-app/compare/v1.10.0...v1.10.1) (2026-10-20)
 
 
