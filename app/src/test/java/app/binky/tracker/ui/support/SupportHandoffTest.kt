@@ -185,6 +185,6 @@ class SupportHandoffTest {
         // Gmail ignores dots, so `binkysupport@` and `binky.support@` are one mailbox — this pins
         // the spelling the Play Console's per-app contact email is set to.
         assertEquals("binky.support@gmail.com", SUPPORT_EMAIL)
-        assertEquals("https://srednimax.github.io/binky-app/privacy-policy.html", PRIVACY_POLICY_URL)
+        assertEquals("https://maksforge.com/binky-app/privacy-policy", PRIVACY_POLICY_URL)
     }
 }

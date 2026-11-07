@@ -176,10 +176,10 @@ The privacy policy's *Tips* bullet says so.
 ## 1. Privacy policy
 
 ```
-https://srednimax.github.io/binky-app/privacy-policy.html
+https://maksforge.com/binky-app/privacy-policy
 ```
 
-Returns HTTP 200; the site root 404s deliberately, which is fine — Play checks the policy URL only.
+Returns HTTP 200 with no redirect. Switched from `https://srednimax.github.io/binky-app/privacy-policy.html` on 2026-11-07.
 
 ## 2. App access
 
