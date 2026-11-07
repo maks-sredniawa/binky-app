@@ -160,7 +160,7 @@ const val PLAY_PACKAGE = "binky.bunny.and.rabbit.tracker"
  */
 const val PLAY_STORE_PACKAGE = "com.android.vending"
 
-/** The same page the Play listing links, so the two cannot drift. */
+/** The page the Play listing links; the listing's `.html` form 307-redirects here. */
 const val PRIVACY_POLICY_URL = "https://maksforge.com/binky-app/privacy-policy"
 
 /** The Play Store app's own scheme. */
