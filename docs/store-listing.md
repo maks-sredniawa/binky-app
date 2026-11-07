@@ -1274,6 +1274,8 @@ Stále bez účtu, bez reklam, bez serveru.
 Досі без облікового запису, без реклами, без сервера.
 ```
 
+---
+
 ### 1.10.2 — the privacy policy link
 
 **1.10.2's notes.** **Scoped to the release's own change.** 1.10.2 changes one thing an owner can see: the
@@ -1297,10 +1299,10 @@ Still no account, no ads, no server.
 Nadal bez konta, bez reklam, bez serwera.
 ```
 
-**German** — 223/500:
+**German** — 224/500:
 
 ```
-• „Datenschutzerklärung“ unter Support funktioniert wieder: Sie öffnet die Erklärung jetzt auf maksforge.com statt unter einer alten Adresse, die nicht mehr erreichbar war.
+• „Datenschutzerklärung“ unter Support funktioniert wieder: Die Erklärung öffnet sich jetzt auf maksforge.com statt unter einer alten Adresse, die nicht mehr erreichbar ist.
 
 Weiterhin kein Konto, keine Werbung, kein Server.
 ```
@@ -1352,6 +1354,7 @@ Stále bez účtu, bez reklam, bez serveru.
 
 Досі без облікового запису, без реклами, без сервера.
 ```
+
 ---
 
 ## Open
