@@ -1274,6 +1274,84 @@ Stále bez účtu, bez reklam, bez serveru.
 Досі без облікового запису, без реклами, без сервера.
 ```
 
+### 1.10.2 — the privacy policy link
+
+**1.10.2's notes.** **Scoped to the release's own change.** 1.10.2 changes one thing an owner can see: the
+Support screen's privacy-policy button, which opened a retired `srednimax.github.io` address that now
+returns 404. Each locale names the screen and the button by the app's own `support_title` and
+`support_privacy_button`, in that locale's quotation marks. Nothing here addresses the reader.
+
+**English** — 184/500:
+
+```
+• “Privacy policy” on the Support screen works again: it now opens the policy at maksforge.com instead of an old address that had stopped working.
+
+Still no account, no ads, no server.
+```
+
+**Polish** — 183/500:
+
+```
+• „Polityka prywatności” na ekranie Wsparcie znowu działa: otwiera politykę na maksforge.com zamiast starego adresu, który przestał działać.
+
+Nadal bez konta, bez reklam, bez serwera.
+```
+
+**German** — 223/500:
+
+```
+• „Datenschutzerklärung“ unter Support funktioniert wieder: Sie öffnet die Erklärung jetzt auf maksforge.com statt unter einer alten Adresse, die nicht mehr erreichbar war.
+
+Weiterhin kein Konto, keine Werbung, kein Server.
+```
+
+**Spanish** — 200/500:
+
+```
+• «Política de privacidad» en Soporte vuelve a funcionar: ahora abre la política en maksforge.com en lugar de una dirección antigua que ya no respondía.
+
+Sigue sin cuenta, sin anuncios y sin servidor.
+```
+
+**French** — 226/500:
+
+```
+• « Politique de confidentialité » dans Assistance fonctionne à nouveau : elle ouvre désormais la politique sur maksforge.com au lieu d’une ancienne adresse qui ne répondait plus.
+
+Toujours sans compte, sans pub, sans serveur.
+```
+
+**Italian** — 212/500:
+
+```
+• «Informativa sulla privacy» in Assistenza funziona di nuovo: ora apre l’informativa su maksforge.com invece di un vecchio indirizzo che non rispondeva più.
+
+Sempre senza account, senza pubblicità, senza server.
+```
+
+**Brazilian Portuguese** — 207/500:
+
+```
+• “Política de privacidade” em Suporte voltou a funcionar: agora abre a política em maksforge.com em vez de um endereço antigo que tinha parado de funcionar.
+
+Continua sem conta, sem anúncios e sem servidor.
+```
+
+**Czech** — 176/500:
+
+```
+• „Zásady ochrany soukromí“ v Podpoře zase fungují: teď otevírají zásady na maksforge.com místo staré adresy, která přestala fungovat.
+
+Stále bez účtu, bez reklam, bez serveru.
+```
+
+**Ukrainian** — 200/500:
+
+```
+• «Політика конфіденційності» в Підтримці знову працює: тепер вона відкривається на maksforge.com замість старої адреси, яка перестала працювати.
+
+Досі без облікового запису, без реклами, без сервера.
+```
 ---
 
 ## Open
