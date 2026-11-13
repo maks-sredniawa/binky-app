@@ -1255,7 +1255,7 @@
     <string name="settings_language_report_hint">Напиши, якщо якесь слово у твоїй мові виглядає неправильно. Відкриває поштовий застосунок, де вже вказано мову, якою ти читаєш.</string>
     <string name="support_title">Довідка та відгуки</string>
     <string name="support_report">Повідомити про проблему</string>
-    <string name="support_report_hint">Відкриває поштовий застосунок, де вже вказано версію застосунку, версію Android, модель телефона та мову. Нічого не надсилається, доки ти не натиснеш «Надіслати».</string>
+    <string name="support_report_hint">Відкриває поштовий застосунок, де вже вказано версію застосунку, версію Android, модель телефона та мову, і нічого з того, що ти записуєш у застосунку. Нічого не надсилається, доки ти не натиснеш «Надіслати».</string>
     <string name="support_feature">Запропонувати функцію</string>
     <string name="support_feature_hint">Напиши, що має вміти застосунок і для чого це тобі знадобиться.</string>
     <string name="support_body_bug">Що сталося і що мало статися натомість:</string>
@@ -1271,6 +1271,10 @@
     <string name="support_tip_thanks">Дякую. Це багато для мене означає.</string>
     <string name="support_tip_pending">Платіж ще обробляється. Google Play його завершить.</string>
     <string name="licence_text_missing">Текст цієї ліцензії не вкладено в застосунок.</string>
+    <string name="licences_intro">Цей застосунок побудовано на бібліотеках нижче. Список береться із самого складання, тож він називає все, що справді містить ця копія застосунку.</string>
+    <string name="licences_read">Прочитати ліцензію</string>
+    <string name="licences_open_terms">Відкрити умови</string>
+    <string name="licences_unavailable">Не вдалося прочитати список ліцензій із цього складання.</string>
     <string name="support_no_browser">На цьому телефоні немає браузера, який можна відкрити.</string>
     <string name="support_site">Вебсторінка застосунку</string>
     <string name="support_privacy">Політика конфіденційності</string>

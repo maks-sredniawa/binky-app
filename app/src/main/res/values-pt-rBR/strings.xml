@@ -1381,7 +1381,7 @@
     <string name="settings_language_report_hint">Me conta se alguma palavra não está certa no seu idioma. Abre o seu app de e-mail com o idioma em que você está lendo já preenchido.</string>
     <string name="support_title">Ajuda e feedback</string>
     <string name="support_report">Relatar um problema</string>
-    <string name="support_report_hint">Abre o seu app de e-mail com a versão do app, a versão do Android, o modelo do celular e o idioma já preenchidos. Nada é enviado até você tocar em enviar.</string>
+    <string name="support_report_hint">Abre o seu app de e-mail com a versão do app, a versão do Android, o modelo do celular e o idioma já preenchidos, e nada do que você registra no app. Nada é enviado até você tocar em enviar.</string>
     <string name="support_feature">Sugerir um recurso</string>
     <string name="support_feature_hint">Conte o que você gostaria que o app fizesse e para que você usaria.</string>
     <string name="support_body_bug">O que aconteceu e o que você esperava que acontecesse:</string>
@@ -1397,6 +1397,10 @@
     <string name="support_tip_thanks">Obrigado. Isso significa muito.</string>
     <string name="support_tip_pending">Seu pagamento ainda está sendo processado. O Google Play vai concluí-lo.</string>
     <string name="licence_text_missing">O texto desta licença não vem junto com o app.</string>
+    <string name="licences_intro">Este app é construído sobre as bibliotecas abaixo. A lista vem do próprio build, então ela nomeia tudo o que esta cópia do app realmente contém.</string>
+    <string name="licences_read">Ler a licença</string>
+    <string name="licences_open_terms">Abrir os termos</string>
+    <string name="licences_unavailable">Não foi possível ler a lista de licenças deste build.</string>
     <string name="support_no_browser">Nenhum navegador neste celular para abrir.</string>
     <string name="support_site">Página do app na web</string>
     <string name="support_privacy">Política de privacidade</string>

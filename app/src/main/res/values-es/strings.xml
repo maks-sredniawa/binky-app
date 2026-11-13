@@ -1211,7 +1211,7 @@
     <string name="settings_language_report_hint">Dime si alguna palabra no está bien en tu idioma. Abre tu app de correo con el idioma en el que lees ya indicado.</string>
     <string name="support_title">Ayuda y comentarios</string>
     <string name="support_report">Informar de un problema</string>
-    <string name="support_report_hint">Abre tu app de correo con la versión de la app, la versión de Android, el modelo del teléfono y el idioma ya indicados. No se envía nada hasta que toques enviar.</string>
+    <string name="support_report_hint">Abre tu app de correo con la versión de la app, la versión de Android, el modelo del teléfono y el idioma ya indicados, y nada de lo que registras en la app. No se envía nada hasta que toques enviar.</string>
     <string name="support_feature">Sugerir una función</string>
     <string name="support_feature_hint">Cuenta qué te gustaría que hiciera la app y para qué lo usarías.</string>
     <string name="support_body_bug">Qué pasó y qué esperabas que pasara en su lugar:</string>
@@ -1227,6 +1227,10 @@
     <string name="support_tip_thanks">Gracias. Significa mucho.</string>
     <string name="support_tip_pending">Tu pago aún se está procesando. Google Play lo completará.</string>
     <string name="licence_text_missing">El texto de esta licencia no viene incluido en la app.</string>
+    <string name="licences_intro">Esta app está construida sobre las bibliotecas de abajo. La lista sale de la propia compilación, así que nombra todo lo que esta copia de la app contiene de verdad.</string>
+    <string name="licences_read">Leer la licencia</string>
+    <string name="licences_open_terms">Abrir los términos</string>
+    <string name="licences_unavailable">No se pudo leer la lista de licencias de esta compilación.</string>
     <string name="support_no_browser">No hay ningún navegador en este teléfono que se pueda abrir.</string>
     <string name="support_site">Página web de la app</string>
     <string name="support_privacy">Política de privacidad</string>

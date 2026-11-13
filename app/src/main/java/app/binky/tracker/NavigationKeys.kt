@@ -153,6 +153,7 @@ data class MedicationCourseEditor(
 @Serializable
 data class LicenceText(
     val spdxId: String,
+    val title: String,
 ) : NavKey
 
 /**
