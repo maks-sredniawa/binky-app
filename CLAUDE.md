@@ -119,8 +119,12 @@ app/src/main/java/app/binky/tracker/
   scan/        the document scanner behind ADR-0009's interface: ML Kit's guided one and the
                plain-camera fallback. **Nothing outside this package names ML Kit** — that is what
                keeps "drop the dependency" a one-line change in AppContainer
-  tip/         the tip through Play Billing and the rule for its one ask on Home (ADR-0011)
+  tip/         the tip through Play Billing and the rule for its one ask on Home (ADR-0011).
+               TipJar.kt and TipBilling.kt arrive from android-starter's sync; TipAsk.kt is Binky's
   ui/          Compose screens + ViewModels, one package per tab
+  ui/support/  Help and feedback, Credits and Settings' About rows — shared by every app. Only
+               SupportConfig.kt is this app's; the rest, and each strings.xml's shared:support block,
+               arrive from android-starter's scripts/sync-support.py, so change them there
   work/        reminder scheduling and notifications
 
 app/src/debug/   the developer-only build: the sample-data seeder, the two-minute reminder, Settings'

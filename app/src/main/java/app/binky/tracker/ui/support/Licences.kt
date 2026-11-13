@@ -3,7 +3,7 @@ package app.binky.tracker.ui.support
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
-// The attribution list, as the build wrote it and as the screen reads it (Phase 7.5 §3).
+// The attribution list, as the build wrote it and as the screen reads it .
 //
 // `licences.json` is **generated**, not committed: `app.cash.licensee` resolves the variant's
 // runtime classpath at build time and `BundleLicences` copies its report into the variant's assets.
@@ -34,11 +34,16 @@ data class LicensedArtifact(
     val artifactId: String,
     val version: String,
     val name: String? = null,
+    /** Where a file the build fetched itself came from, and its SHA-256; Licensee never writes it. */
+    val source: String? = null,
     val spdxLicenses: List<SpdxLicence> = emptyList(),
     val unknownLicenses: List<UnknownLicence> = emptyList(),
 ) {
     /** `androidx.room:room-runtime:2.8.4` — the identity a reader can actually look up. */
     val coordinates: String get() = "$groupId:$artifactId:$version"
+
+    /** What the screen lists for this artifact: its coordinates, and its source under them when known. */
+    val listing: String get() = source?.let { "$coordinates\n$it" } ?: coordinates
 
     /** The POM's own name where there is one; the artifact id is a better fallback than nothing. */
     val displayName: String get() = name?.takeIf(String::isNotBlank) ?: artifactId
@@ -53,7 +58,7 @@ data class SpdxLicence(
 )
 
 /**
- * A licence Licensee could not map to SPDX — here, Google's Android SDK and ML Kit terms.
+ * A licence Licensee could not map to SPDX — for example, a vendor's own terms of service.
  *
  * Both fields are nullable because a POM may declare a `<license>` with only one of them. A licence
  * with neither is unusable and is dropped by [groupLicences] rather than rendered as a blank heading.
@@ -68,10 +73,10 @@ data class UnknownLicence(
  * Every artifact that shares one licence, which is what the screen draws as a section.
  *
  * [spdxId] is null for the licences that are not open source. That distinction is the one this type
- * exists to carry: an SPDX licence's **text travels with the binary** as a bundled asset, where
- * Google's terms of service are not ours to redistribute and can only be linked ([url]).
+ * exists to carry: an SPDX licence's **text travels with the binary** as a bundled asset, where a
+ * vendor's terms of service are not yours to redistribute and can only be linked ([url]).
  *
- * A dual-licensed dependency legitimately appears in two groups. Nothing in the app ships that way
+ * A dual-licensed dependency legitimately appears in two groups. Nothing here ships that way
  * today, but the obligation is per licence rather than per artifact, so listing it twice is correct
  * and de-duplicating would be the bug.
  */
@@ -100,8 +105,11 @@ private val json = Json { ignoreUnknownKeys = true }
  * which the sort at the end then replaces; it is used for determinism while building, not for the
  * final order.
  */
-fun groupLicences(report: String): List<LicenceGroup> {
-    val artifacts = json.decodeFromString<List<LicensedArtifact>>(report)
+fun groupLicences(
+    report: String,
+    bundled: List<LicensedArtifact> = emptyList(),
+): List<LicenceGroup> {
+    val artifacts = json.decodeFromString<List<LicensedArtifact>>(report) + bundled
 
     // Key → (title, spdxId, url). The key is the identity of the licence itself: an SPDX identifier
     // where there is one, and the terms' own URL otherwise, so two POMs spelling the same terms with
@@ -147,3 +155,12 @@ fun groupLicences(report: String): List<LicenceGroup> {
             )
         }.sortedWith(compareBy({ it.spdxId == null }, { it.spdxId ?: it.title }))
 }
+
+/**
+ * The screen's one policy for a report it cannot read: show the bundled credits alone rather than
+ * nothing, because those are often the notices a licence obliges the app to show.
+ */
+fun licencesOrBundled(
+    bundled: List<LicensedArtifact>,
+    report: () -> String,
+): List<LicenceGroup> = runCatching { groupLicences(report(), bundled) }.getOrElse { groupLicences("[]", bundled) }

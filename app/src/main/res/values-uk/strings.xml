@@ -331,7 +331,6 @@
     <string name="settings_language">Мова</string>
     <string name="settings_language_system">Як на телефоні</string>
     <string name="settings_language_help">Binky може працювати іншою мовою, ніж решта телефона. Зміна перезапускає застосунок.</string>
-    <string name="settings_language_report">Щось звучить не так?</string>
     <string name="settings_language_report_help">Напиши, якщо якесь слово у твоїй мові виглядає неправильно.</string>
     <string name="settings_material_you">Кольори з твоїх шпалер</string>
     <string name="settings_material_you_help">У Binky власні кольори. Увімкни це — і кольори братимуться зі шпалер, як це робить сам Android.</string>
@@ -989,42 +988,6 @@
     <string name="more_support_summary">Повідомити про помилку, запропонувати функцію, оцінити застосунок.</string>
     <string name="more_needs_bunny">Спершу додай кролика.</string>
 
-    <!-- Support. The #bug / #feature tag is a Kotlin constant addressed to the maintainer and is
-         deliberately not a resource. "додається" is impersonal: the app is made by one person and
-         never says "we". -->
-    <string name="support_title">Підтримка</string>
-    <string name="support_intro">Binky робить одна людина. Повідомлення про помилку чи ідея потрапляє прямо до неї.</string>
-    <string name="support_bug_button">Повідомити про помилку</string>
-    <string name="support_bug_subject">Повідомлення про помилку</string>
-    <string name="support_translation_subject">Проблема з перекладом</string>
-    <string name="support_bug_prompt">(опиши тут, що сталося)</string>
-    <string name="support_diagnostics_title">Що несе в собі повідомлення про помилку</string>
-    <string name="support_diagnostics_explain">До листа додається версія застосунку, версія Android, модель телефона та мова застосунку. Нічого про твоїх кроликів, і нічого не надсилається, доки ти не натиснеш «Надіслати» у своєму поштовому застосунку.</string>
-    <string name="support_feature_button">Запропонувати функцію</string>
-    <string name="support_feature_subject">Пропозиція функції</string>
-    <string name="support_email_label">Або напиши на:</string>
-    <string name="support_no_mail_app">На цьому телефоні немає поштового застосунку. Адресу вище можна скопіювати.</string>
-    <string name="support_rate_button">Оцінити Binky в Google Play</string>
-    <string name="support_rate_help">Binky безкоштовний і без реклами. Оцінка допомагає іншим його знайти.</string>
-    <string name="support_tip_title">Чайові розробникові</string>
-    <string name="support_tip_help">Одноразові чайові через Google Play. Вони нічого не відкривають, бо в Binky нічого не заблоковано.</string>
-    <string name="support_tip_thanks">Дякую. Це багато для мене означає.</string>
-    <string name="support_tip_pending">Платіж ще обробляється. Google Play його завершить.</string>
-    <string name="support_no_store_app">Не вдалося відкрити Google Play на цьому телефоні.</string>
-    <string name="support_privacy_button">Політика конфіденційності</string>
-    <string name="support_no_browser">На цьому телефоні немає браузера, щоб відкрити сторінку.</string>
-    <string name="support_licences_button">Ліцензії з відкритим кодом</string>
-    <string name="support_version_label">Версія</string>
-
-    <!-- Open-source licence attribution. The list itself is generated at build time and is not
-         translatable content: a translated Apache-2.0 is not Apache-2.0. -->
-    <string name="licences_title">Ліцензії з відкритим кодом</string>
-    <string name="licences_intro">Binky побудовано на бібліотеках нижче. Список береться із самого складання, тож він називає все, що справді містить ця копія застосунку.</string>
-    <string name="licences_read">Прочитати ліцензію</string>
-    <string name="licences_open_terms">Відкрити умови</string>
-    <string name="licences_unavailable">Не вдалося прочитати список ліцензій із цього складання.</string>
-    <string name="licences_text_missing">Текст цієї ліцензії не вкладено в застосунок.</string>
-
     <!-- The photo gallery. §7.6: the argument keeps its job — the photos are of the bunny, not of
          a folder — and the common noun in front of it carries the genitive. -->
     <string name="photo_which_bunny">Чиї фото?</string>
@@ -1283,4 +1246,44 @@
         <item>Тріанта</item>
         <item>Оксамитовий баран</item>
     </string-array>
+
+    <!-- android-starter's shared:support block, translated here because the template ships no uk. -->
+    <string name="settings_about">Про застосунок</string>
+    <string name="settings_support">Довідка та відгуки</string>
+    <string name="settings_licences">Ліцензії з відкритим кодом</string>
+    <string name="settings_language_report">Щось звучить не так?</string>
+    <string name="settings_language_report_hint">Напиши, якщо якесь слово у твоїй мові виглядає неправильно. Відкриває поштовий застосунок, де вже вказано мову, якою ти читаєш.</string>
+    <string name="support_title">Довідка та відгуки</string>
+    <string name="support_report">Повідомити про проблему</string>
+    <string name="support_report_hint">Відкриває поштовий застосунок, де вже вказано версію застосунку, версію Android, модель телефона та мову. Нічого не надсилається, доки ти не натиснеш «Надіслати».</string>
+    <string name="support_feature">Запропонувати функцію</string>
+    <string name="support_feature_hint">Напиши, що має вміти застосунок і для чого це тобі знадобиться.</string>
+    <string name="support_body_bug">Що сталося і що мало статися натомість:</string>
+    <string name="support_body_feature">Що має вміти застосунок?</string>
+    <string name="support_body_language">Яке слово звучить неправильно і на якому екрані?</string>
+    <string name="support_no_mail_app">На цьому телефоні немає поштового застосунку, який можна відкрити. Адресу вище можна скопіювати.</string>
+    <string name="support_address_hint">Напиши напряму. Натисни, щоб скопіювати адресу.</string>
+    <string name="support_rate">Оцінити застосунок у Google Play</string>
+    <string name="support_rate_hint">Відкриває застосунок у Google Play. Оцінка необов’язкова й нічого не розблоковує.</string>
+    <string name="support_no_play">На цьому телефоні немає ні Google Play, ні браузера, який можна відкрити.</string>
+    <string name="support_tip">Чайові розробникові</string>
+    <string name="support_tip_hint">Одноразові чайові, оплачені через Google Play. Вони нічого не розблоковують, бо в цьому застосунку нічого не заблоковано.</string>
+    <string name="support_tip_thanks">Дякую. Це багато для мене означає.</string>
+    <string name="support_tip_pending">Платіж ще обробляється. Google Play його завершить.</string>
+    <string name="licence_text_missing">Текст цієї ліцензії не вкладено в застосунок.</string>
+    <string name="support_no_browser">На цьому телефоні немає браузера, який можна відкрити.</string>
+    <string name="support_site">Вебсторінка застосунку</string>
+    <string name="support_privacy">Політика конфіденційності</string>
+    <string name="support_privacy_hint">Відкривається в браузері.</string>
+    <string name="support_credits">Подяки</string>
+    <string name="support_credits_hint">Хто створив застосунок, і ліцензії з відкритим кодом</string>
+    <string name="credits_made_by">Хто створив застосунок</string>
+    <string name="credits_creator">Ідея та втілення</string>
+    <string name="credits_helped_by">Допомога</string>
+    <string name="support_more_apps">Більше застосунків MaksForge</string>
+    <string name="support_more_apps_hint">Інші безкоштовні застосунки того самого розробника.</string>
+    <!-- %1$s is the version, e.g. "1.4.0 (23)". -->
+    <string name="support_version">Версія %1$s</string>
+    <string name="support_version_hint">Натисни, щоб скопіювати.</string>
+    <string name="support_copied">Скопійовано.</string>
 </resources>

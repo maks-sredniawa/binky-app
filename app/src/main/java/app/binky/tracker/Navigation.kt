@@ -81,6 +81,7 @@ import app.binky.tracker.ui.shell.ShellUiState
 import app.binky.tracker.ui.support.LicenceTextScreen
 import app.binky.tracker.ui.support.LicencesScreen
 import app.binky.tracker.ui.support.SupportScreen
+import app.binky.tracker.ui.support.TipSection
 import app.binky.tracker.ui.vet.VetEditorScreen
 import app.binky.tracker.ui.vet.VetsScreen
 import app.binky.tracker.ui.watch.WatchExpiryHost
@@ -613,27 +614,27 @@ private fun AppShell(
                         SettingsScreen(
                             onBack = { backStack.removeLastOrNull() },
                             onOpenBackup = { backStack.add(Backup) },
+                            onOpenSupport = { backStack.add(Support) },
+                            onOpenLicences = { backStack.add(Licences) },
                         )
                     }
                     entry<Backup> { BackupScreen(onBack = { backStack.removeLastOrNull() }) }
                     entry<Support> {
                         SupportScreen(
                             onBack = { backStack.removeLastOrNull() },
-                            onOpenLicences = { backStack.add(Licences) },
+                            onOpenCredits = { backStack.add(Licences) },
+                            tip = { TipSection() },
                         )
                     }
                     entry<Licences> {
                         LicencesScreen(
                             onBack = { backStack.removeLastOrNull() },
-                            onOpenLicenceText = { spdxId, title ->
-                                backStack.add(LicenceText(spdxId, title))
-                            },
+                            onOpenLicence = { spdxId -> backStack.add(LicenceText(spdxId)) },
                         )
                     }
                     entry<LicenceText> { key ->
                         LicenceTextScreen(
                             spdxId = key.spdxId,
-                            title = key.title,
                             onBack = { backStack.removeLastOrNull() },
                         )
                     }

@@ -130,8 +130,8 @@ data class MedicationCourseEditor(
 @Serializable data object Settings : NavKey
 
 /**
- * Support, reached from More — the same shape as [Settings], and the app's only About-shaped screen:
- * the two mail hand-offs, the Play listing, the privacy policy, and the running build's version.
+ * Help and feedback, android-starter's shared screen, reached from More and from Settings' About
+ * section — the same shape as [Settings].
  *
  * The **second** route this file gained after Phase 1, after [WeightEntry] — see its note. Promoting
  * it empties ADR-0015's "coming soon" block, which Support was the last occupant of.
@@ -139,9 +139,8 @@ data class MedicationCourseEditor(
 @Serializable data object Support : NavKey
 
 /**
- * Open-source licence attribution, reached from Support — a detail route off a detail route, which
- * is the first of those in the app and is what the obligation's shape asks for: it belongs *under*
- * About, not beside it.
+ * Credits — the people who made the app, then open-source licence attribution — reached from Help and
+ * feedback's Credits row and from Settings' About section.
  *
  * The **third and fourth** routes this file has gained after Phase 1, after [WeightEntry] and
  * [Support]. The note on [WeightEntry] said a third would be worth writing down, so: the rule that
@@ -150,18 +149,10 @@ data class MedicationCourseEditor(
  */
 @Serializable data object Licences : NavKey
 
-/**
- * One licence's full text, as it ships inside the APK (Phase 7.5 §3).
- *
- * [spdxId] names the asset — `licences/Apache-2.0.txt`. [title] is carried rather than looked up, and
- * this is the one place in the file where a duplicated fact is right: a licence's English name is
- * fixed by the licence itself, so unlike a bunny's name it has nothing to go stale against, and
- * deriving it would mean re-parsing the whole generated list to draw one app bar.
- */
+/** One licence's full text, as it ships inside the APK; [spdxId] names the asset — `licences/Apache-2.0.txt`. */
 @Serializable
 data class LicenceText(
     val spdxId: String,
-    val title: String,
 ) : NavKey
 
 /**

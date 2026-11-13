@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.AP
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import app.binky.tracker.BinkyApplication
+import app.binky.tracker.MainApplication
 import app.binky.tracker.tip.TipJar
 import app.binky.tracker.tip.TipOffer
 import app.binky.tracker.tip.TipOutcome
@@ -18,7 +18,7 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
 /**
- * @param offers the tips Play will sell here, cheapest first. Empty means no tip card at all.
+ * @param offers the tips Play will sell here, cheapest first. Empty means no tip section at all.
  * @param outcome what the last tip from this screen became, or `null` before one finishes.
  */
 data class SupportUiState(
@@ -26,7 +26,7 @@ data class SupportUiState(
     val outcome: TipOutcome? = null,
 )
 
-/** The tip's half of Support (ADR-0011); every other row on the screen is stateless. */
+/** The tip's half of Support (ADR-0007); every other row on the screen is stateless. */
 class SupportViewModel(
     private val tipJar: TipJar,
 ) : ViewModel() {
@@ -54,7 +54,7 @@ class SupportViewModel(
         val Factory =
             viewModelFactory {
                 initializer {
-                    val app = this[APPLICATION_KEY] as BinkyApplication
+                    val app = this[APPLICATION_KEY] as MainApplication
                     SupportViewModel(app.container.tipJar)
                 }
             }

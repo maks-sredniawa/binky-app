@@ -419,7 +419,6 @@
     <string name="settings_language">Jazyk</string>
     <string name="settings_language_system">Stejný jako v telefonu</string>
     <string name="settings_language_help">Binky může mít jiný jazyk než zbytek telefonu. Po změně se aplikace restartuje.</string>
-    <string name="settings_language_report">Zní něco špatně?</string>
     <string name="settings_language_report_help">Napiš mi, jestli je nějaké slovo ve tvém jazyce špatně.</string>
     <!-- ADR-0027. Shown on Android 12 and newer only. -->
     <string name="settings_material_you">Barvy podle tapety</string>
@@ -1135,45 +1134,6 @@
     <!-- The subtitle a row wears while it is inert, in place of its summary (ADR-0001). -->
     <string name="more_needs_bunny">Nejdřív přidej králíka.</string>
 
-    <!-- Support: the two mail hand-offs, the Play listing, the privacy policy and this build's
-         version. The app's only About-shaped screen. -->
-    <string name="support_title">Podpora</string>
-    <string name="support_intro">Binky dělá jeden člověk. Hlášení chyby nebo nápad se k němu dostane přímo.</string>
-    <string name="support_bug_button">Nahlásit chybu</string>
-    <string name="support_bug_subject">Hlášení chyby</string>
-    <string name="support_translation_subject">Problém s překladem</string>
-    <string name="support_bug_prompt">(sem popiš, co se stalo)</string>
-    <string name="support_diagnostics_title">Co s sebou hlášení nese</string>
-    <!-- "We" would claim a team where there is one person — the Polish read-through's finding. -->
-    <string name="support_diagnostics_explain">Ke zprávě se připojí verze aplikace, verze Androidu, model telefonu a jazyk aplikace. Nic o tvých králících, a nic se neodešle, dokud v poštovní aplikaci neklepneš na odeslat.</string>
-    <string name="support_feature_button">Navrhnout funkci</string>
-    <string name="support_feature_subject">Návrh funkce</string>
-    <string name="support_email_label">Nebo napiš na:</string>
-    <!-- Names the address's position on screen rather than repeating the address. -->
-    <string name="support_no_mail_app">V tomhle telefonu není poštovní aplikace. Adresu nahoře jde zkopírovat.</string>
-    <string name="support_rate_button">Ohodnotit Binky na Google Play</string>
-    <string name="support_rate_help">Binky je zdarma a bez reklam. Hodnocení pomáhá dalším chovatelům Binky najít.</string>
-    <string name="support_tip_title">Spropitné pro vývojáře</string>
-    <string name="support_tip_help">Jednorázové spropitné, placené přes Google Play. Nic neodemyká, protože v Binky není nic zamčeného.</string>
-    <string name="support_tip_thanks">Děkuji. Hodně to pro mě znamená.</string>
-    <string name="support_tip_pending">Platba se ještě zpracovává. Google Play ji dokončí.</string>
-    <string name="support_no_store_app">Google Play se v tomhle telefonu nepodařilo otevřít.</string>
-    <string name="support_privacy_button">Zásady ochrany soukromí</string>
-    <string name="support_no_browser">V tomhle telefonu není prohlížeč, který by stránku otevřel.</string>
-    <string name="support_licences_button">Licence open source</string>
-    <string name="support_version_label">Verze</string>
-
-    <!-- Open-source licence attribution. The list itself is generated at build time and is not
-         translatable content — a translated Apache-2.0 is not Apache-2.0. These seven are. -->
-    <string name="licences_title">Licence open source</string>
-    <string name="licences_intro">Binky stojí na knihovnách níž. Seznam pochází přímo ze sestavení, takže jmenuje všechno, co tahle kopie aplikace opravdu obsahuje.</string>
-    <string name="licences_read">Přečíst licenci</string>
-    <string name="licences_open_terms">Otevřít podmínky</string>
-    <!-- Both describe a broken build rather than anything an owner did, so they say what is
-         missing and stop. -->
-    <string name="licences_unavailable">Seznam licencí se z tohohle sestavení nepodařilo přečíst.</string>
-    <string name="licences_text_missing">Text téhle licence není součástí aplikace.</string>
-
     <!-- The photo gallery: one bunny's pictures, reached from More -->
     <string name="photo_which_bunny">Čí fotky?</string>
     <string name="photo_gallery_title">Fotky: %1$s</string>
@@ -1459,4 +1419,44 @@
         <item>Thrianta</item>
         <item>Velveteen Lop</item>
     </string-array>
+
+    <!-- android-starter's shared:support block, translated here because the template ships no cs. -->
+    <string name="settings_about">O aplikaci</string>
+    <string name="settings_support">Nápověda a zpětná vazba</string>
+    <string name="settings_licences">Licence open source</string>
+    <string name="settings_language_report">Zní něco špatně?</string>
+    <string name="settings_language_report_hint">Napiš mi, jestli je nějaké slovo ve tvém jazyce špatně. Otevře poštovní aplikaci s už vyplněným jazykem, ve kterém čteš.</string>
+    <string name="support_title">Nápověda a zpětná vazba</string>
+    <string name="support_report">Nahlásit problém</string>
+    <string name="support_report_hint">Otevře poštovní aplikaci s vyplněnou verzí aplikace, verzí Androidu, modelem telefonu a jazykem. Nic se neodešle, dokud neklepneš na odeslat.</string>
+    <string name="support_feature">Navrhnout funkci</string>
+    <string name="support_feature_hint">Napiš, co má aplikace umět a k čemu ti to poslouží.</string>
+    <string name="support_body_bug">Co se stalo a co se mělo stát místo toho:</string>
+    <string name="support_body_feature">Co by aplikace měla umět?</string>
+    <string name="support_body_language">Které slovo zní špatně a na které obrazovce?</string>
+    <string name="support_no_mail_app">V tomhle telefonu není poštovní aplikace, kterou by šlo otevřít. Adresu nahoře můžeš zkopírovat.</string>
+    <string name="support_address_hint">Napiš přímo. Klepnutím adresu zkopíruješ.</string>
+    <string name="support_rate">Ohodnotit aplikaci na Google Play</string>
+    <string name="support_rate_hint">Otevře aplikaci na Google Play. Hodnocení je dobrovolné a nic neodemyká.</string>
+    <string name="support_no_play">V tomhle telefonu není Google Play ani prohlížeč, který by šel otevřít.</string>
+    <string name="support_tip">Spropitné pro vývojáře</string>
+    <string name="support_tip_hint">Jednorázové spropitné, placené přes Google Play. Nic neodemyká, protože v téhle aplikaci není nic zamčeného.</string>
+    <string name="support_tip_thanks">Děkuji. Hodně to pro mě znamená.</string>
+    <string name="support_tip_pending">Platba se ještě zpracovává. Google Play ji dokončí.</string>
+    <string name="licence_text_missing">Text téhle licence není součástí aplikace.</string>
+    <string name="support_no_browser">V tomhle telefonu není prohlížeč, který by šel otevřít.</string>
+    <string name="support_site">Webová stránka aplikace</string>
+    <string name="support_privacy">Zásady ochrany soukromí</string>
+    <string name="support_privacy_hint">Otevře se v prohlížeči.</string>
+    <string name="support_credits">Poděkování</string>
+    <string name="support_credits_hint">Kdo aplikaci vytvořil a licence open source</string>
+    <string name="credits_made_by">Kdo aplikaci vytvořil</string>
+    <string name="credits_creator">Nápad a provedení</string>
+    <string name="credits_helped_by">Pomoc</string>
+    <string name="support_more_apps">Další aplikace MaksForge</string>
+    <string name="support_more_apps_hint">Další bezplatné aplikace od stejného vývojáře.</string>
+    <!-- %1$s is the version, e.g. "1.4.0 (23)". -->
+    <string name="support_version">Verze %1$s</string>
+    <string name="support_version_hint">Klepnutím zkopíruješ.</string>
+    <string name="support_copied">Zkopírováno.</string>
 </resources>

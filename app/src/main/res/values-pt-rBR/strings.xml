@@ -412,7 +412,6 @@
     <string name="settings_language">Idioma</string>
     <string name="settings_language_system">O mesmo do celular</string>
     <string name="settings_language_help">O Binky pode usar um idioma diferente do resto do celular. Alterar isto reinicia o app.</string>
-    <string name="settings_language_report">Alguma coisa soa errada?</string>
     <string name="settings_language_report_help">Me conta se alguma palavra não está certa no seu idioma.</string>
     <!-- ADR-0027, Android 12+ only. -->
     <string name="settings_material_you">Cores do seu papel de parede</string>
@@ -1102,41 +1101,6 @@
     <string name="more_support_summary">Relate um problema, sugira um recurso, avalie o app.</string>
     <string name="more_needs_bunny">Adicione um coelho primeiro.</string>
 
-    <!-- Support: the two mail hand-offs, the Play listing, the privacy policy and the version. -->
-    <string name="support_title">Suporte</string>
-    <string name="support_intro">O Binky é feito por uma pessoa só. Um relato de problema ou uma ideia chega direto a ela.</string>
-    <string name="support_bug_button">Relatar um problema</string>
-    <string name="support_bug_subject">Relato de problema</string>
-    <string name="support_translation_subject">Problema de tradução</string>
-    <string name="support_bug_prompt">(descreva aqui o que aconteceu)</string>
-    <string name="support_diagnostics_title">O que um relato de problema leva junto</string>
-    <!-- Impersonal, and no "we": the app is made by one person (§1, and Polish's fix here). -->
-    <string name="support_diagnostics_explain">A versão do app, a sua versão do Android, o modelo do celular e o idioma do app entram na mensagem. Nada sobre os seus coelhos, e nada é enviado até você tocar em enviar no seu app de e-mail.</string>
-    <string name="support_feature_button">Sugerir um recurso</string>
-    <string name="support_feature_subject">Sugestão de recurso</string>
-    <string name="support_email_label">Ou escreva para:</string>
-    <string name="support_no_mail_app">Nenhum app de e-mail neste celular. O endereço acima pode ser copiado.</string>
-    <string name="support_rate_button">Avaliar o Binky no Google Play</string>
-    <string name="support_rate_help">O Binky é gratuito e sem anúncios. Uma avaliação ajuda outras pessoas a encontrá-lo.</string>
-    <string name="support_tip_title">Deixar uma gorjeta para o desenvolvedor</string>
-    <string name="support_tip_help">Uma gorjeta única, paga pelo Google Play. Ela não desbloqueia nada, porque nada no Binky é bloqueado.</string>
-    <string name="support_tip_thanks">Obrigado. Isso significa muito.</string>
-    <string name="support_tip_pending">Seu pagamento ainda está sendo processado. O Google Play vai concluí-lo.</string>
-    <string name="support_no_store_app">Não foi possível abrir o Google Play neste celular.</string>
-    <string name="support_privacy_button">Política de privacidade</string>
-    <string name="support_no_browser">Nenhum navegador neste celular para abrir a página.</string>
-    <string name="support_licences_button">Licenças de código aberto</string>
-    <string name="support_version_label">Versão</string>
-
-    <!-- Open-source licence attribution. The list itself is generated at build time and is not
-         translatable content — a translated Apache-2.0 is not Apache-2.0. These seven are. -->
-    <string name="licences_title">Licenças de código aberto</string>
-    <string name="licences_intro">O Binky é construído sobre as bibliotecas abaixo. A lista vem do próprio build, então ela nomeia tudo o que esta cópia do app realmente contém.</string>
-    <string name="licences_read">Ler a licença</string>
-    <string name="licences_open_terms">Abrir os termos</string>
-    <string name="licences_unavailable">Não foi possível ler a lista de licenças deste build.</string>
-    <string name="licences_text_missing">O texto desta licença não vem junto com o app.</string>
-
     <!-- The photo gallery: one bunny's pictures, reached from More -->
     <string name="photo_which_bunny">Fotos de quem?</string>
     <string name="photo_gallery_title">Fotos: %1$s</string>
@@ -1408,4 +1372,44 @@
         <item>Thrianta</item>
         <item>Velveteen Lop</item>
     </string-array>
+
+    <!-- android-starter's shared:support block, translated here because the template ships no pt-rBR. -->
+    <string name="settings_about">Sobre</string>
+    <string name="settings_support">Ajuda e feedback</string>
+    <string name="settings_licences">Licenças de código aberto</string>
+    <string name="settings_language_report">Alguma coisa soa errada?</string>
+    <string name="settings_language_report_hint">Me conta se alguma palavra não está certa no seu idioma. Abre o seu app de e-mail com o idioma em que você está lendo já preenchido.</string>
+    <string name="support_title">Ajuda e feedback</string>
+    <string name="support_report">Relatar um problema</string>
+    <string name="support_report_hint">Abre o seu app de e-mail com a versão do app, a versão do Android, o modelo do celular e o idioma já preenchidos. Nada é enviado até você tocar em enviar.</string>
+    <string name="support_feature">Sugerir um recurso</string>
+    <string name="support_feature_hint">Conte o que você gostaria que o app fizesse e para que você usaria.</string>
+    <string name="support_body_bug">O que aconteceu e o que você esperava que acontecesse:</string>
+    <string name="support_body_feature">O que você gostaria que o app fizesse?</string>
+    <string name="support_body_language">Qual palavra soa errada, e em qual tela?</string>
+    <string name="support_no_mail_app">Nenhum app de e-mail neste celular para abrir. Você pode copiar o endereço acima.</string>
+    <string name="support_address_hint">Escreva diretamente. Toque para copiar o endereço.</string>
+    <string name="support_rate">Avaliar este app no Google Play</string>
+    <string name="support_rate_hint">Abre este app no Google Play. Avaliar é opcional e não desbloqueia nada.</string>
+    <string name="support_no_play">Nem Google Play nem navegador neste celular para abrir.</string>
+    <string name="support_tip">Deixar uma gorjeta para o desenvolvedor</string>
+    <string name="support_tip_hint">Uma gorjeta única, paga pelo Google Play. Não desbloqueia nada, porque nada neste app é bloqueado.</string>
+    <string name="support_tip_thanks">Obrigado. Isso significa muito.</string>
+    <string name="support_tip_pending">Seu pagamento ainda está sendo processado. O Google Play vai concluí-lo.</string>
+    <string name="licence_text_missing">O texto desta licença não vem junto com o app.</string>
+    <string name="support_no_browser">Nenhum navegador neste celular para abrir.</string>
+    <string name="support_site">Página do app na web</string>
+    <string name="support_privacy">Política de privacidade</string>
+    <string name="support_privacy_hint">Abre no navegador.</string>
+    <string name="support_credits">Créditos</string>
+    <string name="support_credits_hint">Quem fez o app e licenças de código aberto</string>
+    <string name="credits_made_by">Quem fez o app</string>
+    <string name="credits_creator">Ideia e desenvolvimento</string>
+    <string name="credits_helped_by">Com a ajuda de</string>
+    <string name="support_more_apps">Mais apps MaksForge</string>
+    <string name="support_more_apps_hint">Outros apps gratuitos do mesmo desenvolvedor.</string>
+    <!-- %1$s is the version, e.g. "1.4.0 (23)". -->
+    <string name="support_version">Versão %1$s</string>
+    <string name="support_version_hint">Toque para copiar.</string>
+    <string name="support_copied">Copiado.</string>
 </resources>

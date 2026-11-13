@@ -227,7 +227,6 @@
     <string name="settings_language">Sprache</string>
     <string name="settings_language_system">Wie auf diesem Handy</string>
     <string name="settings_language_help">Binky kann eine andere Sprache verwenden als der Rest des Handys. Eine Änderung startet die App neu.</string>
-    <string name="settings_language_report">Klingt etwas falsch?</string>
     <string name="settings_language_report_help">Schreib mir, wenn ein Wort in deiner Sprache nicht stimmt.</string>
     <!-- ADR-0027 -->
     <string name="settings_material_you">Farben von deinem Hintergrundbild</string>
@@ -871,41 +870,6 @@
     <string name="more_support_summary">Fehler melden, Idee vorschlagen, App bewerten.</string>
     <string name="more_needs_bunny">Füge zuerst ein Kaninchen hinzu.</string>
 
-    <!-- Support: the app's only About-shaped screen -->
-    <string name="support_title">Support</string>
-    <string name="support_intro">Binky wird von einer einzelnen Person gemacht. Eine Fehlermeldung oder eine Idee kommt direkt an.</string>
-    <string name="support_bug_button">Fehler melden</string>
-    <string name="support_bug_subject">Fehlermeldung</string>
-    <string name="support_translation_subject">Übersetzungsproblem</string>
-    <string name="support_bug_prompt">(hier beschreiben, was passiert ist)</string>
-    <string name="support_diagnostics_title">Was eine Fehlermeldung mitschickt</string>
-    <string name="support_diagnostics_explain">Die App-Version, deine Android-Version, das Handymodell und die Sprache der App werden der Nachricht hinzugefügt. Nichts über deine Kaninchen, und nichts wird gesendet, bevor du in deiner Mail-App auf Senden tippst.</string>
-    <string name="support_feature_button">Funktion vorschlagen</string>
-    <string name="support_feature_subject">Funktionswunsch</string>
-    <string name="support_email_label">Oder schreib an:</string>
-    <string name="support_no_mail_app">Keine Mail-App auf diesem Handy. Die Adresse oben lässt sich kopieren.</string>
-    <string name="support_rate_button">Binky bei Google Play bewerten</string>
-    <string name="support_rate_help">Binky ist kostenlos und werbefrei. Eine Bewertung hilft anderen, es zu finden.</string>
-    <string name="support_tip_title">Dem Entwickler ein Trinkgeld geben</string>
-    <string name="support_tip_help">Ein einmaliges Trinkgeld, bezahlt über Google Play. Es schaltet nichts frei, denn in Binky ist nichts gesperrt.</string>
-    <string name="support_tip_thanks">Danke. Das bedeutet mir viel.</string>
-    <string name="support_tip_pending">Deine Zahlung wird noch bearbeitet. Google Play schließt sie ab.</string>
-    <string name="support_no_store_app">Google Play ließ sich auf diesem Handy nicht öffnen.</string>
-    <string name="support_privacy_button">Datenschutzerklärung</string>
-    <string name="support_no_browser">Kein Browser auf diesem Handy, um die Seite zu öffnen.</string>
-    <string name="support_licences_button">Open-Source-Lizenzen</string>
-    <string name="support_version_label">Version</string>
-
-    <!-- Open-source licence attribution. The generated list, the licence names and the licence
-         texts are not resources and stay English — a translated Apache-2.0 is not Apache-2.0.
-         These seven strings around them are ordinary copy. -->
-    <string name="licences_title">Open-Source-Lizenzen</string>
-    <string name="licences_intro">Binky baut auf den Bibliotheken unten auf. Die Liste kommt aus dem Build selbst und nennt daher alles, was diese Kopie der App wirklich enthält.</string>
-    <string name="licences_read">Lizenz lesen</string>
-    <string name="licences_open_terms">Bedingungen öffnen</string>
-    <string name="licences_unavailable">Die Lizenzliste ließ sich aus diesem Build nicht lesen.</string>
-    <string name="licences_text_missing">Der Text dieser Lizenz liegt der App nicht bei.</string>
-
     <!-- The photo gallery: one bunny's pictures -->
     <string name="photo_which_bunny">Wessen Fotos?</string>
     <string name="photo_gallery_title">Fotos: %1$s</string>
@@ -1171,4 +1135,44 @@
         <item>Thrianta</item>
         <item>Velveteen Lop</item>
     </string-array>
+
+    <!-- android-starter's shared:support block, translated here because the template ships no de. -->
+    <string name="settings_about">Über die App</string>
+    <string name="settings_support">Hilfe und Feedback</string>
+    <string name="settings_licences">Open-Source-Lizenzen</string>
+    <string name="settings_language_report">Klingt etwas falsch?</string>
+    <string name="settings_language_report_hint">Schreib mir, wenn ein Wort in deiner Sprache nicht stimmt. Öffnet deine Mail-App, in der die Sprache, in der du liest, schon eingetragen ist.</string>
+    <string name="support_title">Hilfe und Feedback</string>
+    <string name="support_report">Problem melden</string>
+    <string name="support_report_hint">Öffnet deine Mail-App mit App-Version, Android-Version, Handymodell und Sprache schon eingetragen. Nichts wird gesendet, bevor du auf Senden tippst.</string>
+    <string name="support_feature">Funktion vorschlagen</string>
+    <string name="support_feature_hint">Schreib, was die App können soll und wofür du es nutzen würdest.</string>
+    <string name="support_body_bug">Was ist passiert, und was hättest du stattdessen erwartet:</string>
+    <string name="support_body_feature">Was soll die App können?</string>
+    <string name="support_body_language">Welches Wort klingt falsch, und auf welchem Bildschirm?</string>
+    <string name="support_no_mail_app">Keine Mail-App auf diesem Handy, die sich öffnen lässt. Du kannst die Adresse oben kopieren.</string>
+    <string name="support_address_hint">Schreib direkt. Tippen kopiert die Adresse.</string>
+    <string name="support_rate">Diese App auf Google Play bewerten</string>
+    <string name="support_rate_hint">Öffnet die App auf Google Play. Bewerten ist freiwillig und schaltet nichts frei.</string>
+    <string name="support_no_play">Weder Google Play noch ein Browser auf diesem Handy, der sich öffnen lässt.</string>
+    <string name="support_tip">Dem Entwickler ein Trinkgeld geben</string>
+    <string name="support_tip_hint">Ein einmaliges Trinkgeld, bezahlt über Google Play. Es schaltet nichts frei, weil in dieser App nichts gesperrt ist.</string>
+    <string name="support_tip_thanks">Danke. Das bedeutet mir viel.</string>
+    <string name="support_tip_pending">Deine Zahlung wird noch bearbeitet. Google Play schließt sie ab.</string>
+    <string name="licence_text_missing">Der Text dieser Lizenz liegt der App nicht bei.</string>
+    <string name="support_no_browser">Kein Browser auf diesem Handy, der sich öffnen lässt.</string>
+    <string name="support_site">Webseite der App</string>
+    <string name="support_privacy">Datenschutzerklärung</string>
+    <string name="support_privacy_hint">Öffnet sich im Browser.</string>
+    <string name="support_credits">Mitwirkende</string>
+    <string name="support_credits_hint">Wer die App gemacht hat, und Open-Source-Lizenzen</string>
+    <string name="credits_made_by">Gemacht von</string>
+    <string name="credits_creator">Idee und Umsetzung</string>
+    <string name="credits_helped_by">Mit Hilfe von</string>
+    <string name="support_more_apps">Weitere MaksForge-Apps</string>
+    <string name="support_more_apps_hint">Weitere kostenlose Apps vom selben Entwickler.</string>
+    <!-- %1$s is the version, e.g. "1.4.0 (23)". -->
+    <string name="support_version">Version %1$s</string>
+    <string name="support_version_hint">Tippen zum Kopieren.</string>
+    <string name="support_copied">Kopiert.</string>
 </resources>

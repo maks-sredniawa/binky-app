@@ -237,3 +237,6 @@ class BinkyApplication :
         )
     }
 }
+
+/** The name android-starter's synced `ui/support/` files reach the application by. */
+typealias MainApplication = BinkyApplication
