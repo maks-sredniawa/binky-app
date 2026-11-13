@@ -1,11 +1,11 @@
 package app.binky.tracker.work
 
-import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.os.PowerManager
 import android.provider.Settings
+import app.binky.tracker.ui.common.startActivitySafely
 
 /**
  * Xiaomi's autostart manager. The activity that decides, on HyperOS, whether this app's background
@@ -80,23 +80,3 @@ fun Context.openAutostartSettings(): Boolean =
 
 private fun autostartIntent(): Intent =
     Intent().setComponent(ComponentName(MIUI_SECURITY_CENTER, MIUI_AUTOSTART_ACTIVITY))
-
-/**
- * `startActivity`, reporting failure rather than taking the app down with it.
- *
- * An OEM screen that is present but not exported to us throws `SecurityException`, which is the same
- * outcome from here as it not being there at all.
- *
- * `internal` rather than private since 5a: [openExactAlarmSettings] walks the same fallback list for
- * the same reason, and two copies of a three-line try/catch is how one of them quietly stops
- * catching something.
- */
-internal fun Context.startActivitySafely(intent: Intent): Boolean =
-    try {
-        startActivity(intent)
-        true
-    } catch (e: ActivityNotFoundException) {
-        false
-    } catch (e: SecurityException) {
-        false
-    }
