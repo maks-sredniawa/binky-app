@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.11.0](https://github.com/maks-sredniawa/binky-app/compare/v1.10.2...v1.11.0) (2026-11-13)
+
+
+### Features
+
+* **support:** adopt the shared Help and feedback from android-starter ([7400b64](https://github.com/maks-sredniawa/binky-app/commit/7400b64b229dedeb5519688a9b0727f13f530e07))
+* **support:** take android-starter's licence screens with full names, terms links and the intro, and translate them ([babdd9b](https://github.com/maks-sredniawa/binky-app/commit/babdd9b16ba09a2fef259c3b2ce7a0e92a7ab451))
+
+
+### Bug Fixes
+
+* **e2e:** open the licence text through its Read the licence row ([66e847e](https://github.com/maks-sredniawa/binky-app/commit/66e847e13cf9b411aca93738ec696b42802dfdfd))
+* keep the helpers heading in release builds, and check whole strings in aab-locale ([407d335](https://github.com/maks-sredniawa/binky-app/commit/407d335f6ebcec9ed0f16aabb804b41904da8557))
+* **support:** sync android-starter's no-mail-app address, guarded licence listing and tip ADR wording ([4930bf3](https://github.com/maks-sredniawa/binky-app/commit/4930bf32703d1646d86a7a9636a0d3bd93e393de))
+
 ## [1.10.2](https://github.com/maks-sredniawa/binky-app/compare/v1.10.1...v1.10.2) (2026-11-07)
 
 
