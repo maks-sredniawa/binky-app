@@ -1144,7 +1144,7 @@
     <string name="settings_language_report_hint">Schreib mir, wenn ein Wort in deiner Sprache nicht stimmt. Öffnet deine Mail-App, in der die Sprache, in der du liest, schon eingetragen ist.</string>
     <string name="support_title">Hilfe und Feedback</string>
     <string name="support_report">Problem melden</string>
-    <string name="support_report_hint">Öffnet deine Mail-App mit App-Version, Android-Version, Handymodell und Sprache schon eingetragen. Nichts wird gesendet, bevor du auf Senden tippst.</string>
+    <string name="support_report_hint">Öffnet deine Mail-App mit App-Version, Android-Version, Handymodell und Sprache schon eingetragen, aber nichts von dem, was du in der App festhältst. Nichts wird gesendet, bevor du auf Senden tippst.</string>
     <string name="support_feature">Funktion vorschlagen</string>
     <string name="support_feature_hint">Schreib, was die App können soll und wofür du es nutzen würdest.</string>
     <string name="support_body_bug">Was ist passiert, und was hättest du stattdessen erwartet:</string>
@@ -1160,6 +1160,10 @@
     <string name="support_tip_thanks">Danke. Das bedeutet mir viel.</string>
     <string name="support_tip_pending">Deine Zahlung wird noch bearbeitet. Google Play schließt sie ab.</string>
     <string name="licence_text_missing">Der Text dieser Lizenz liegt der App nicht bei.</string>
+    <string name="licences_intro">Diese App baut auf den Bibliotheken unten auf. Die Liste kommt aus dem Build selbst und nennt daher alles, was diese Kopie der App wirklich enthält.</string>
+    <string name="licences_read">Lizenz lesen</string>
+    <string name="licences_open_terms">Bedingungen öffnen</string>
+    <string name="licences_unavailable">Die Lizenzliste ließ sich aus diesem Build nicht lesen.</string>
     <string name="support_no_browser">Kein Browser auf diesem Handy, der sich öffnen lässt.</string>
     <string name="support_site">Webseite der App</string>
     <string name="support_privacy">Datenschutzerklärung</string>

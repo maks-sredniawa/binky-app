@@ -1428,7 +1428,7 @@
     <string name="settings_language_report_hint">Napiš mi, jestli je nějaké slovo ve tvém jazyce špatně. Otevře poštovní aplikaci s už vyplněným jazykem, ve kterém čteš.</string>
     <string name="support_title">Nápověda a zpětná vazba</string>
     <string name="support_report">Nahlásit problém</string>
-    <string name="support_report_hint">Otevře poštovní aplikaci s vyplněnou verzí aplikace, verzí Androidu, modelem telefonu a jazykem. Nic se neodešle, dokud neklepneš na odeslat.</string>
+    <string name="support_report_hint">Otevře poštovní aplikaci s vyplněnou verzí aplikace, verzí Androidu, modelem telefonu a jazykem, bez ničeho, co v aplikaci zaznamenáváš. Nic se neodešle, dokud neklepneš na odeslat.</string>
     <string name="support_feature">Navrhnout funkci</string>
     <string name="support_feature_hint">Napiš, co má aplikace umět a k čemu ti to poslouží.</string>
     <string name="support_body_bug">Co se stalo a co se mělo stát místo toho:</string>
@@ -1444,6 +1444,10 @@
     <string name="support_tip_thanks">Děkuji. Hodně to pro mě znamená.</string>
     <string name="support_tip_pending">Platba se ještě zpracovává. Google Play ji dokončí.</string>
     <string name="licence_text_missing">Text téhle licence není součástí aplikace.</string>
+    <string name="licences_intro">Tahle aplikace stojí na knihovnách níž. Seznam pochází přímo ze sestavení, takže jmenuje všechno, co tahle kopie aplikace opravdu obsahuje.</string>
+    <string name="licences_read">Přečíst licenci</string>
+    <string name="licences_open_terms">Otevřít podmínky</string>
+    <string name="licences_unavailable">Seznam licencí se z tohohle sestavení nepodařilo přečíst.</string>
     <string name="support_no_browser">V tomhle telefonu není prohlížeč, který by šel otevřít.</string>
     <string name="support_site">Webová stránka aplikace</string>
     <string name="support_privacy">Zásady ochrany soukromí</string>

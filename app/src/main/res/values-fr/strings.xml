@@ -1294,7 +1294,7 @@
     <string name="settings_language_report_hint">Dis-moi si un mot ne va pas dans ta langue. Ouvre ton application de messagerie avec la langue dans laquelle tu lis déjà indiquée.</string>
     <string name="support_title">Aide et avis</string>
     <string name="support_report">Signaler un problème</string>
-    <string name="support_report_hint">Ouvre ton application de messagerie avec la version de l’application, la version d’Android, le modèle du téléphone et la langue déjà indiqués. Rien n’est envoyé tant que tu ne touches pas « envoyer ».</string>
+    <string name="support_report_hint">Ouvre ton application de messagerie avec la version de l’application, la version d’Android, le modèle du téléphone et la langue déjà indiqués, et rien de ce que tu enregistres dans l’application. Rien n’est envoyé tant que tu ne touches pas « envoyer ».</string>
     <string name="support_feature">Proposer une fonction</string>
     <string name="support_feature_hint">Dis ce que tu aimerais que l’application fasse, et à quoi ça te servirait.</string>
     <string name="support_body_bug">Ce qui s’est passé, et ce qui aurait dû se passer à la place :</string>
@@ -1310,6 +1310,10 @@
     <string name="support_tip_thanks">Merci. Ça compte beaucoup.</string>
     <string name="support_tip_pending">Ton paiement est encore en cours de traitement. Google Play le finalisera.</string>
     <string name="licence_text_missing">Le texte de cette licence n’est pas fourni avec l’application.</string>
+    <string name="licences_intro">Cette application est construite sur les bibliothèques ci-dessous. La liste vient du build lui-même : elle nomme donc tout ce que cette copie de l’application contient vraiment.</string>
+    <string name="licences_read">Lire la licence</string>
+    <string name="licences_open_terms">Ouvrir les conditions</string>
+    <string name="licences_unavailable">La liste des licences n’a pas pu être lue depuis ce build.</string>
     <string name="support_no_browser">Aucun navigateur à ouvrir sur ce téléphone.</string>
     <string name="support_site">Page web de l’application</string>
     <string name="support_privacy">Politique de confidentialité</string>

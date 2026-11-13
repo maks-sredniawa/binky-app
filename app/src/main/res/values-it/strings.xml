@@ -1361,7 +1361,7 @@
     <string name="settings_language_report_hint">Scrivimi se una parola non va nella tua lingua. Apre la tua app di posta con la lingua in cui stai leggendo già indicata.</string>
     <string name="support_title">Aiuto e feedback</string>
     <string name="support_report">Segnala un problema</string>
-    <string name="support_report_hint">Apre la tua app di posta con la versione dell’app, la versione di Android, il modello del telefono e la lingua già indicati. Non parte niente finché non tocchi invia.</string>
+    <string name="support_report_hint">Apre la tua app di posta con la versione dell’app, la versione di Android, il modello del telefono e la lingua già indicati, e niente di quello che registri nell’app. Non parte niente finché non tocchi invia.</string>
     <string name="support_feature">Suggerisci una funzione</string>
     <string name="support_feature_hint">Racconta cosa vorresti che facesse l’app e a cosa ti servirebbe.</string>
     <string name="support_body_bug">Cosa è successo e cosa ti aspettavi invece:</string>
@@ -1377,6 +1377,10 @@
     <string name="support_tip_thanks">Grazie. Significa molto.</string>
     <string name="support_tip_pending">Il pagamento è ancora in elaborazione. Google Play lo completerà.</string>
     <string name="licence_text_missing">Il testo di questa licenza non viaggia insieme all’app.</string>
+    <string name="licences_intro">Questa app è costruita sulle librerie qui sotto. L’elenco viene dalla build stessa, quindi nomina davvero tutto quello che questa copia dell’app contiene.</string>
+    <string name="licences_read">Leggi la licenza</string>
+    <string name="licences_open_terms">Apri i termini</string>
+    <string name="licences_unavailable">Non è stato possibile leggere da questa build l’elenco delle licenze.</string>
     <string name="support_no_browser">Su questo telefono non c’è un browser da aprire.</string>
     <string name="support_site">Pagina web dell’app</string>
     <string name="support_privacy">Informativa sulla privacy</string>
