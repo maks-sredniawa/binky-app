@@ -7,8 +7,7 @@ package app.binky.tracker.ui.support
  *
  * Each constant is compiled into every build and frozen there for as long as a sideloaded copy
  * survives, so the address and the site sit on a domain we own, whose routing can move without a
- * release. The Play listing's contact field carries the same address —
- * `docs/DOD.md`, *Before the first upload*.
+ * release. The Play listing's contact field carries the same address — `docs/store-listing.md`.
  */
 object SupportConfig {
     const val SUPPORT_ADDRESS = "binky.support@maksforge.com"
