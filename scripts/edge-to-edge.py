@@ -1287,8 +1287,7 @@ SCENES = [
     Scene("support", "detail", [("tap", "More"), ("tap", "Support")]),
     # Credits, android-starter's shared screen: the people, then attribution (Phase 7.5 §3).
     Scene("licences", "detail", [("tap", "More"), ("tap", "Support"), ("tap", "Credits")]),
-    # A group's heading opens its bundled text. "Apache License 2.0" is the licence's own name, not a
-    # resource, so it passes through the resolver as a literal in every locale.
+    # Apache's group is the first on Credits, so its "Read the licence" row is the first match.
     Scene(
         "licence-text",
         "detail",
@@ -1296,7 +1295,7 @@ SCENES = [
             ("tap", "More"),
             ("tap", "Support"),
             ("tap", "Credits"),
-            ("tap", "Apache License 2.0"),
+            ("tap", "Read the licence"),
         ],
     ),
     # --- full-bleed content, which has no inner padding of its own to hide behind -------------
