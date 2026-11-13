@@ -53,11 +53,10 @@ import app.binky.tracker.ui.common.ListRow
 import app.binky.tracker.ui.common.RowDivider
 import app.binky.tracker.ui.common.SectionHeader
 import app.binky.tracker.ui.common.SwitchRow
+import app.binky.tracker.ui.support.AboutSection
+import app.binky.tracker.ui.support.LanguageReportRow
 import app.binky.tracker.ui.support.SupportRequest
-import app.binky.tracker.ui.support.currentSupportDiagnostics
 import app.binky.tracker.ui.support.sendSupportMail
-import app.binky.tracker.ui.support.supportBody
-import app.binky.tracker.ui.support.supportSubject
 
 /**
  * Settings, reached from More. A detail screen, the same shape as the archived bunnies list.
@@ -97,6 +96,8 @@ import app.binky.tracker.ui.support.supportSubject
 fun SettingsScreen(
     onBack: () -> Unit,
     onOpenBackup: () -> Unit,
+    onOpenSupport: () -> Unit,
+    onOpenLicences: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val viewModel: SettingsViewModel = viewModel(factory = SettingsViewModel.Factory, extras = appViewModelExtras())
@@ -142,6 +143,8 @@ fun SettingsScreen(
 
             GroupedCard {
                 LanguageRow()
+                RowDivider()
+                LanguageReportRow()
                 // **Hidden below Android 12**, where there is no wallpaper palette to take.
                 // `BinkyTheme` already ignores the preference there, and a switch that provably
                 // does nothing is the pointless furniture ADR-0013 warned about. The stored value is
@@ -171,6 +174,8 @@ fun SettingsScreen(
                     trailing = { Chevron() },
                 )
             }
+
+            Column { AboutSection(onOpenSupport = onOpenSupport, onOpenLicences = onOpenLicences) }
 
             // Debug builds only — and a *source set* rather than a runtime flag. `src/release/`'s
             // DebugSettings is an empty composable, so the release build never compiles the seeder
@@ -280,12 +285,9 @@ private fun LanguageRow() {
     var chosen by remember { mutableStateOf(currentAppLanguage()) }
     var picking by remember { mutableStateOf(false) }
 
-    // The translation-report hand-off. Resolved here because the tap happens in an ordinary lambda,
-    // where `stringResource` is not callable — the same shape `SupportScreen` uses.
+    // Resolved here because the report's tap happens in an ordinary lambda, where `stringResource` is
+    // not callable.
     val context = LocalContext.current
-    val diagnostics = currentSupportDiagnostics()
-    val translationSubject = stringResource(R.string.support_translation_subject)
-    val bugPrompt = stringResource(R.string.support_bug_prompt)
     val noMailApp = stringResource(R.string.support_no_mail_app)
     var mailFailed by remember { mutableStateOf(false) }
 
@@ -356,21 +358,14 @@ private fun LanguageRow() {
             // without a native read-through, so this row is the mechanism that replaces one — and a
             // channel nobody can find is the same as no channel.
             //
-            // It sends an ordinary bug report: `SupportRequest.BUG`, so the one inbox filter that
-            // already covers every locale catches it, with a description of its own so the maintainer
-            // can still tell the two apart on sight. `supportBody` stamps the resolved locale into the
-            // block, which is what makes such a report self-identifying without asking the sender
-            // which language they are in.
+            // The same `#language` report as Settings' row under this one; the mail body carries the
+            // resolved locale, so the sender is never asked which language they are in.
             HorizontalDivider()
             ListRow(
                 title = stringResource(R.string.settings_language_report),
                 subtitle = stringResource(R.string.settings_language_report_help),
                 onClick = {
-                    val sent =
-                        context.sendSupportMail(
-                            subject = supportSubject(SupportRequest.BUG, translationSubject, diagnostics),
-                            body = supportBody(SupportRequest.BUG, bugPrompt, diagnostics),
-                        )
+                    val sent = context.sendSupportMail(SupportRequest.Language)
                     // The dialog stays open on failure, which is why this screen needs no snackbar
                     // host: a message behind a dismissed dialog is a message nobody reads.
                     if (sent) picking = false else mailFailed = true

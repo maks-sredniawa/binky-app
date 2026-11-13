@@ -227,7 +227,6 @@
     <string name="settings_language_portuguese_br" translatable="false">Português (Brasil)</string>
     <string name="settings_language_ukrainian" translatable="false">Українська</string>
     <string name="settings_language_help">Binky can use a different language from the rest of the phone. Changing this restarts the app.</string>
-    <string name="settings_language_report">Something read wrong?</string>
     <string name="settings_language_report_help">Tell me if a word looks off in your language.</string>
     <!-- ADR-0027. The row is shown on Android 12 and newer only, where there is a wallpaper palette
          to take; below that the app has always used its own colours and there is nothing to offer. -->
@@ -971,52 +970,6 @@
          `more_coming_soon`, which went with the block it belonged to when Support went live -->
     <string name="more_needs_bunny">Add a bunny first.</string>
 
-    <!-- Support: the two mail hand-offs, the Play listing, the privacy policy and this build's
-         version. The app's only About-shaped screen. The `#bug` / `#feature` tag that opens each
-         subject is deliberately NOT here — it is a Kotlin constant addressed to the maintainer, not
-         to the sender (ADR-0013 exception, see SupportHandoff.kt), and so is the diagnostics block:
-         every line in it is a number or an identifier -->
-    <string name="support_title">Support</string>
-    <string name="support_intro">Binky is made by one person. A bug report or an idea reaches them directly.</string>
-    <string name="support_bug_button">Report a bug</string>
-    <string name="support_bug_subject">Bug report</string>
-    <string name="support_translation_subject">Translation problem</string>
-    <string name="support_bug_prompt">(describe what happened here)</string>
-    <string name="support_diagnostics_title">What a bug report carries</string>
-    <string name="support_diagnostics_explain">The app version, your Android version, the phone model and the app\'s language are added to the message. Nothing about your bunnies, and nothing is sent until you tap send in your mail app.</string>
-    <string name="support_feature_button">Request a feature</string>
-    <string name="support_feature_subject">Feature request</string>
-    <string name="support_email_label">Or write to:</string>
-    <!-- Names the address's position on screen rather than repeating the address, so the snackbar
-         and the text above it cannot disagree after an edit to one of them -->
-    <string name="support_no_mail_app">No mail app on this phone. The address above can be copied.</string>
-    <string name="support_rate_button">Rate Binky on Google Play</string>
-    <string name="support_rate_help">Binky is free and ad-free. A rating helps other owners find it.</string>
-    <!-- The tip (ADR-0011): a payment to the developer that unlocks nothing. Never "donate" or
-         "support the project". The buttons are Play's own formatted prices, not strings -->
-    <string name="support_tip_title">Tip the developer</string>
-    <string name="support_tip_help">A one-off tip, paid through Google Play. It unlocks nothing, because nothing in Binky is locked.</string>
-    <string name="support_tip_thanks">Thank you. It means a lot.</string>
-    <string name="support_tip_pending">Your payment is still being processed. Google Play will finish it.</string>
-    <string name="support_no_store_app">Google Play could not be opened on this phone.</string>
-    <string name="support_privacy_button">Privacy policy</string>
-    <string name="support_no_browser">No browser on this phone to open the page.</string>
-    <string name="support_licences_button">Open-source licences</string>
-    <string name="support_version_label">Version</string>
-
-    <!-- Open-source licence attribution, reached from Support. The list itself is generated at build
-         time by app.cash.licensee and is NOT translatable content: dependency names, versions,
-         licence names and licence texts are all English by definition — a translated Apache-2.0 is
-         not Apache-2.0. What the locales get is these seven strings -->
-    <string name="licences_title">Open-source licences</string>
-    <string name="licences_intro">Binky is built on the libraries below. The list comes from the build itself, so it names everything this copy of the app really contains.</string>
-    <string name="licences_read">Read the licence</string>
-    <string name="licences_open_terms">Open the terms</string>
-    <!-- Both of these describe a broken build rather than anything an owner did, so they say what is
-         missing and stop — there is no action to offer -->
-    <string name="licences_unavailable">The licence list could not be read from this build.</string>
-    <string name="licences_text_missing">This licence\'s text is not bundled with the app.</string>
-
     <!-- The photo gallery: one bunny's pictures, reached from More -->
     <string name="photo_which_bunny">Whose photos?</string>
     <string name="photo_gallery_title">Photos: %1$s</string>
@@ -1280,4 +1233,48 @@
         <item>Thrianta</item>
         <item>Velveteen Lop</item>
     </string-array>
+
+    <!-- shared:support begin. Synced into every app by android-starter's scripts/sync-support.py:
+         change it there, never in an app. -->
+    <string name="settings_about">About</string>
+    <string name="settings_support">Help and feedback</string>
+    <string name="settings_licences">Open-source licences</string>
+    <string name="settings_language_report">Something read wrong?</string>
+    <string name="settings_language_report_hint">Tell me if a word looks wrong in your language. Opens your email app, with the language you are reading already filled in.</string>
+    <string name="support_title">Help and feedback</string>
+    <string name="support_report">Report a problem</string>
+    <string name="support_report_hint">Opens your email app with the app version, Android version, phone model and language filled in. Nothing is sent until you tap send.</string>
+    <string name="support_feature">Suggest a feature</string>
+    <string name="support_feature_hint">Say what you would like the app to do, and what you would use it for.</string>
+    <string name="support_body_bug">What happened, and what you expected instead:</string>
+    <string name="support_body_feature">What would you like the app to do?</string>
+    <string name="support_body_language">Which word read wrong, and on which screen?</string>
+    <string name="support_no_mail_app">No email app on this phone to open. You can copy the address above.</string>
+    <string name="support_address_hint">Write directly. Tap to copy the address.</string>
+    <string name="support_rate">Rate this app on Google Play</string>
+    <string name="support_rate_hint">Opens this app on Google Play. Rating is optional and unlocks nothing.</string>
+    <string name="support_no_play">No Google Play or web browser on this phone to open.</string>
+    <!-- The tip (ADR-0007): a payment to the developer that unlocks nothing. Never "donate" or
+         "support the project". The buttons are Play's own formatted prices, not strings -->
+    <string name="support_tip">Tip the developer</string>
+    <string name="support_tip_hint">A one-off tip, paid through Google Play. It unlocks nothing, because nothing in this app is locked.</string>
+    <string name="support_tip_thanks">Thank you. It means a lot.</string>
+    <string name="support_tip_pending">Your payment is still being processed. Google Play will finish it.</string>
+    <string name="licence_text_missing">The text of this licence is not bundled with the app.</string>
+    <string name="support_no_browser">No web browser on this phone to open.</string>
+    <string name="support_site">App web page</string>
+    <string name="support_privacy">Privacy policy</string>
+    <string name="support_privacy_hint">Opens in your browser.</string>
+    <string name="support_credits">Credits</string>
+    <string name="support_credits_hint">Who made the app, and open-source licences</string>
+    <string name="credits_made_by">Made by</string>
+    <string name="credits_creator">Creator</string>
+    <string name="credits_helped_by">With help from</string>
+    <string name="support_more_apps">More MaksForge apps</string>
+    <string name="support_more_apps_hint">Other free apps by the same developer.</string>
+    <!-- %1$s is the version, e.g. "1.4.0 (23)". -->
+    <string name="support_version">Version %1$s</string>
+    <string name="support_version_hint">Tap to copy.</string>
+    <string name="support_copied">Copied.</string>
+    <!-- shared:support end -->
 </resources>

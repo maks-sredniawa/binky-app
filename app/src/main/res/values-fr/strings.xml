@@ -330,7 +330,6 @@
     <!-- The endonyms are translatable="false" and deliberately absent: `Polski` is `Polski` on
          a French phone too. -->
     <string name="settings_language_help">Binky peut utiliser une autre langue que le reste du téléphone. Ce changement redémarre l’application.</string>
-    <string name="settings_language_report">Quelque chose sonne faux ?</string>
     <string name="settings_language_report_help">Dis-moi si un mot ne va pas dans ta langue.</string>
     <!-- ADR-0027. Shown on Android 12 and newer only. -->
     <string name="settings_material_you">Les couleurs de ton fond d’écran</string>
@@ -1021,45 +1020,6 @@
     <!-- The subtitle a row wears while it is inert, in place of its summary (ADR-0001). -->
     <string name="more_needs_bunny">Ajoute d’abord un lapin.</string>
 
-    <!-- Support: the two mail hand-offs, the Play listing, the privacy policy and this build's
-         version. The #bug / #feature tag is a Kotlin constant, not a resource. -->
-    <string name="support_title">Assistance</string>
-    <string name="support_intro">Binky est fait par une seule personne. Un rapport de bug ou une idée lui arrive directement.</string>
-    <string name="support_bug_button">Signaler un bug</string>
-    <string name="support_bug_subject">Rapport de bug</string>
-    <string name="support_translation_subject">Problème de traduction</string>
-    <string name="support_bug_prompt">(décris ici ce qui s’est passé)</string>
-    <string name="support_diagnostics_title">Ce que contient un rapport de bug</string>
-    <!-- Impersonal, and no "nous": the app is made by one person (the Polish read-through's
-         seventh defect was exactly this). -->
-    <string name="support_diagnostics_explain">La version de l’application, ta version d’Android, le modèle du téléphone et la langue de Binky sont ajoutés au message. Rien sur tes lapins, et rien n’est envoyé tant que tu n’as pas touché « envoyer » dans ton application de messagerie.</string>
-    <string name="support_feature_button">Proposer une idée</string>
-    <string name="support_feature_subject">Demande de fonctionnalité</string>
-    <string name="support_email_label">Ou écris à :</string>
-    <string name="support_no_mail_app">Aucune application de messagerie sur ce téléphone. L’adresse ci-dessus peut être copiée.</string>
-    <string name="support_rate_button">Noter Binky sur Google Play</string>
-    <string name="support_rate_help">Binky est gratuit et sans publicité. Une note aide d’autres personnes à le trouver.</string>
-    <string name="support_tip_title">Laisser un pourboire au développeur</string>
-    <string name="support_tip_help">Un pourboire unique, payé via Google Play. Il ne débloque rien, car rien n’est verrouillé dans Binky.</string>
-    <string name="support_tip_thanks">Merci. Ça compte beaucoup.</string>
-    <string name="support_tip_pending">Ton paiement est encore en cours de traitement. Google Play le finalisera.</string>
-    <string name="support_no_store_app">Google Play n’a pas pu être ouvert sur ce téléphone.</string>
-    <string name="support_privacy_button">Politique de confidentialité</string>
-    <string name="support_no_browser">Aucun navigateur sur ce téléphone pour ouvrir la page.</string>
-    <string name="support_licences_button">Licences open source</string>
-    <string name="support_version_label">Version</string>
-
-    <!-- Open-source licence attribution. The list itself is generated at build time and is not
-         translatable content — a translated Apache-2.0 is not Apache-2.0. -->
-    <string name="licences_title">Licences open source</string>
-    <string name="licences_intro">Binky est construit sur les bibliothèques ci-dessous. La liste vient du build lui-même : elle nomme donc tout ce que cette copie de l’application contient vraiment.</string>
-    <string name="licences_read">Lire la licence</string>
-    <string name="licences_open_terms">Ouvrir les conditions</string>
-    <!-- Both describe a broken build rather than anything an owner did: they say what is
-         missing and stop. -->
-    <string name="licences_unavailable">La liste des licences n’a pas pu être lue depuis ce build.</string>
-    <string name="licences_text_missing">Le texte de cette licence n’est pas fourni avec l’application.</string>
-
     <!-- The photo gallery: one bunny's pictures, reached from More -->
     <string name="photo_which_bunny">Les photos de qui ?</string>
     <string name="photo_gallery_title">Photos : %1$s</string>
@@ -1325,4 +1285,44 @@
         <item>Thrianta</item>
         <item>Velveteen Lop</item>
     </string-array>
+
+    <!-- android-starter's shared:support block, translated here because the template ships no fr. -->
+    <string name="settings_about">À propos</string>
+    <string name="settings_support">Aide et avis</string>
+    <string name="settings_licences">Licences open source</string>
+    <string name="settings_language_report">Quelque chose sonne faux ?</string>
+    <string name="settings_language_report_hint">Dis-moi si un mot ne va pas dans ta langue. Ouvre ton application de messagerie avec la langue dans laquelle tu lis déjà indiquée.</string>
+    <string name="support_title">Aide et avis</string>
+    <string name="support_report">Signaler un problème</string>
+    <string name="support_report_hint">Ouvre ton application de messagerie avec la version de l’application, la version d’Android, le modèle du téléphone et la langue déjà indiqués. Rien n’est envoyé tant que tu ne touches pas « envoyer ».</string>
+    <string name="support_feature">Proposer une fonction</string>
+    <string name="support_feature_hint">Dis ce que tu aimerais que l’application fasse, et à quoi ça te servirait.</string>
+    <string name="support_body_bug">Ce qui s’est passé, et ce qui aurait dû se passer à la place :</string>
+    <string name="support_body_feature">Qu’aimerais-tu que l’application fasse ?</string>
+    <string name="support_body_language">Quel mot sonne faux, et sur quel écran ?</string>
+    <string name="support_no_mail_app">Aucune application de messagerie à ouvrir sur ce téléphone. Tu peux copier l’adresse ci-dessus.</string>
+    <string name="support_address_hint">Écris directement. Touche pour copier l’adresse.</string>
+    <string name="support_rate">Noter cette application sur Google Play</string>
+    <string name="support_rate_hint">Ouvre cette application sur Google Play. La note est facultative et ne débloque rien.</string>
+    <string name="support_no_play">Ni Google Play ni navigateur à ouvrir sur ce téléphone.</string>
+    <string name="support_tip">Laisser un pourboire au développeur</string>
+    <string name="support_tip_hint">Un pourboire unique, payé via Google Play. Il ne débloque rien, car rien n’est verrouillé dans cette application.</string>
+    <string name="support_tip_thanks">Merci. Ça compte beaucoup.</string>
+    <string name="support_tip_pending">Ton paiement est encore en cours de traitement. Google Play le finalisera.</string>
+    <string name="licence_text_missing">Le texte de cette licence n’est pas fourni avec l’application.</string>
+    <string name="support_no_browser">Aucun navigateur à ouvrir sur ce téléphone.</string>
+    <string name="support_site">Page web de l’application</string>
+    <string name="support_privacy">Politique de confidentialité</string>
+    <string name="support_privacy_hint">S’ouvre dans le navigateur.</string>
+    <string name="support_credits">Crédits</string>
+    <string name="support_credits_hint">Qui a fait l’application, et licences open source</string>
+    <string name="credits_made_by">Qui a fait l’application</string>
+    <string name="credits_creator">Idée et réalisation</string>
+    <string name="credits_helped_by">Avec l’aide de</string>
+    <string name="support_more_apps">Plus d’applications MaksForge</string>
+    <string name="support_more_apps_hint">D’autres applications gratuites du même développeur.</string>
+    <!-- %1$s is the version, e.g. "1.4.0 (23)". -->
+    <string name="support_version">Version %1$s</string>
+    <string name="support_version_hint">Touche pour copier.</string>
+    <string name="support_copied">Copié.</string>
 </resources>
