@@ -1435,6 +1435,7 @@
     <string name="support_body_feature">Co by aplikace měla umět?</string>
     <string name="support_body_language">Které slovo zní špatně a na které obrazovce?</string>
     <string name="support_no_mail_app">V tomhle telefonu není poštovní aplikace, kterou by šlo otevřít. Adresu nahoře můžeš zkopírovat.</string>
+    <string name="support_no_mail_app_write_to">V tomhle telefonu není poštovní aplikace, kterou by šlo otevřít. Můžeš napsat na %1$s.</string>
     <string name="support_address_hint">Napiš přímo. Klepnutím adresu zkopíruješ.</string>
     <string name="support_rate">Ohodnotit aplikaci na Google Play</string>
     <string name="support_rate_hint">Otevře aplikaci na Google Play. Hodnocení je dobrovolné a nic neodemyká.</string>

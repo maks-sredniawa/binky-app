@@ -1151,6 +1151,7 @@
     <string name="support_body_feature">Was soll die App können?</string>
     <string name="support_body_language">Welches Wort klingt falsch, und auf welchem Bildschirm?</string>
     <string name="support_no_mail_app">Keine Mail-App auf diesem Handy, die sich öffnen lässt. Du kannst die Adresse oben kopieren.</string>
+    <string name="support_no_mail_app_write_to">Keine Mail-App auf diesem Handy, die sich öffnen lässt. Du kannst an %1$s schreiben.</string>
     <string name="support_address_hint">Schreib direkt. Tippen kopiert die Adresse.</string>
     <string name="support_rate">Diese App auf Google Play bewerten</string>
     <string name="support_rate_hint">Öffnet die App auf Google Play. Bewerten ist freiwillig und schaltet nichts frei.</string>

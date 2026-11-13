@@ -1388,6 +1388,7 @@
     <string name="support_body_feature">O que você gostaria que o app fizesse?</string>
     <string name="support_body_language">Qual palavra soa errada, e em qual tela?</string>
     <string name="support_no_mail_app">Nenhum app de e-mail neste celular para abrir. Você pode copiar o endereço acima.</string>
+    <string name="support_no_mail_app_write_to">Nenhum app de e-mail neste celular para abrir. Você pode escrever para %1$s.</string>
     <string name="support_address_hint">Escreva diretamente. Toque para copiar o endereço.</string>
     <string name="support_rate">Avaliar este app no Google Play</string>
     <string name="support_rate_hint">Abre este app no Google Play. Avaliar é opcional e não desbloqueia nada.</string>

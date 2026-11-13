@@ -1368,6 +1368,7 @@
     <string name="support_body_feature">Cosa vorresti che facesse l’app?</string>
     <string name="support_body_language">Quale parola suona male, e in quale schermata?</string>
     <string name="support_no_mail_app">Su questo telefono non c’è un’app di posta da aprire. Puoi copiare l’indirizzo qui sopra.</string>
+    <string name="support_no_mail_app_write_to">Su questo telefono non c’è un’app di posta da aprire. Puoi scrivere a %1$s.</string>
     <string name="support_address_hint">Scrivi direttamente. Tocca per copiare l’indirizzo.</string>
     <string name="support_rate">Valuta questa app su Google Play</string>
     <string name="support_rate_hint">Apre questa app su Google Play. La valutazione è facoltativa e non sblocca niente.</string>

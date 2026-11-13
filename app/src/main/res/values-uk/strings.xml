@@ -1262,6 +1262,7 @@
     <string name="support_body_feature">Що має вміти застосунок?</string>
     <string name="support_body_language">Яке слово звучить неправильно і на якому екрані?</string>
     <string name="support_no_mail_app">На цьому телефоні немає поштового застосунку, який можна відкрити. Адресу вище можна скопіювати.</string>
+    <string name="support_no_mail_app_write_to">На цьому телефоні немає поштового застосунку, який можна відкрити. Можна написати на %1$s.</string>
     <string name="support_address_hint">Напиши напряму. Натисни, щоб скопіювати адресу.</string>
     <string name="support_rate">Оцінити застосунок у Google Play</string>
     <string name="support_rate_hint">Відкриває застосунок у Google Play. Оцінка необов’язкова й нічого не розблоковує.</string>
